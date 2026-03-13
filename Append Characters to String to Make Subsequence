@@ -1,0 +1,18 @@
+class Solution {
+    public int appendCharacters(String s, String t) {
+        char ch[]=s.toCharArray();
+        char ch1[]=t.toCharArray();
+        int i=0,j=0;
+        while(i<s.length()&&j<t.length())
+        {
+            if(ch[i]==ch1[j])
+            
+            {
+                j++;
+            }
+             i++;
+        }
+       
+       return t.length()-j; 
+    }
+}
